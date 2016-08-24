@@ -4,7 +4,7 @@ import Ember from 'ember';
 export default DS.Model.extend({
   name: DS.attr(),
   description: DS.attr(),
-  cost: DS.attr(),
+  cost: DS.attr('number'),
   image: DS.attr(),
   reviews: DS.hasMany('review', {async: true}),
   averageRating: Ember.computed('reviews', function() {

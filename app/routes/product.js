@@ -4,11 +4,16 @@ export default Ember.Route.extend({
   model(params) {
     return this.store.findRecord('product', params.product_id);
   },
-  shoppingCart: Ember.inject.service(),
-
   actions: {
-    addToCart(item) {
-      this.get('shoppingCart').add(item);
+    save(params) {
+      var newReview = this.store.createRecord('review', params);
+      var product = params.product;
+      product.get('reviews').addObject(newReview);
+      newReview.save().then(function() {
+        return product.save();
+      });
+      this.transitionTo('product');
     }
   }
+
 });

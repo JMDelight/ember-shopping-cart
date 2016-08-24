@@ -1,0 +1,28 @@
+<h3>{{product.name}}</h3>
+{{#if editProduct}}
+<h4>Edit {{product.name}}</h4>
+<div>
+  <form>
+    <div class="form-group">
+      <label for="title">Name</label>
+      {{input value=product.name}}
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      {{input value=product.description}}
+    </div>
+    <div class="form-group">
+      <label for="cost">Cost</label>
+      {{input type="number" value=product.cost}}
+    </div>
+    <div class="form-group">
+      <label for="image">Image URL</label>
+      {{input value=product.image}}
+    </div>
+
+    <button {{action 'edit' product}}>Save</button>
+  </form>
+</div>
+{{else}}
+<button {{action 'editProductShow'}}>Update</button>
+{{/if}}

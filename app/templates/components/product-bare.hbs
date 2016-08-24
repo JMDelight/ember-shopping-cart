@@ -3,6 +3,10 @@
   {{#link-to 'product' product.id}}<h3>{{product.name}}</h3>{{/link-to}}
   <p>${{product.cost}}</p>
   <p>
-    Rating: {{product.averageRating}}
+    {{#if product.averageRating}}
+      Rating: {{product.averageRating}}
+    {{else}}
+      <p>Rating: No rating</p>
+    {{/if}}
   </p>
 </div>

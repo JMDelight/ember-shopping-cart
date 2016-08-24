@@ -1,9 +1,3 @@
+{{product-tile product=model save='save'}}
 
-{{model.name}}
-<ul>
-  {{#each model.reviews as |review|}}
-    <li>{{review-tile review=review}}</li>
-  {{/each}}
-</ul>
-<button {{action "addToCart" model}}>Add to Cart</button>
 {{display-cart}}
