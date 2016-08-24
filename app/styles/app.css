@@ -3,6 +3,14 @@ li {
 }
 
 .thumbnail {
-  width: 100px;
+  width: 150px;
   float: left;
+}
+
+.image-medium {
+  height: 300px;
+}
+
+.image-container {
+  margin-bottom: 15px;
 }

@@ -9,7 +9,6 @@ export default Ember.Component.extend({
     edit(product) {
       product.save();
       this.set('editProduct', false);
-      this.transitionTo('admin');
     }
   }
 });

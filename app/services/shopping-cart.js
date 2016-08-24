@@ -12,7 +12,6 @@ export default Ember.Service.extend({
     this.get("items").forEach(function(item) {
       runningTotal += item.get('cost');
     });
-    console.log(runningTotal);
     return runningTotal;
   }),
 });

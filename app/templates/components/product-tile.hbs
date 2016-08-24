@@ -1,9 +1,21 @@
-{{product.name}}
+<div class="image-container">
+  <img src={{product.image}} alt={{product.name}} class="image-medium" />
+</div>
+{{product.name}} | Quantity remaining: {{product.quantity}}
+<p>
+  {{product.description}}
+</p>
+<p>
+  Cost: ${{product.cost}}
+</p>
 <ul>
   {{#each product.reviews as |review|}}
     <li>{{review-tile review=review}}</li>
   {{/each}}
 </ul>
-<button {{action "addToCart" product}}>Add to Cart</button>
-
+{{#if product.quantity}}
+  <button {{action "addToCart" product}}>Add to Cart</button>
+{{else}}
+  <h4>Product out of stock</h4>
+{{/if}}
 {{add-review save='save' product=product}}

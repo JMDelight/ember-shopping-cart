@@ -3,6 +3,7 @@
     "product1" : {
       "name": "Gramaphone",
       "description": "Beautiful antique gramaphone.",
+      "quantity": 6,
       "cost": 180,
       "image": "http://www.pxleyes.com/images/contests/music-mayhem/fullsize/Gramophone-De-Luxe-4c9e47fca8af7_hires.jpg",
       "reviews": {
@@ -13,6 +14,7 @@
     "product2" : {
       "name": "Eiffel Tower Replica",
       "description": "Beautiful 1/100 scale wax replica of the historic Eiffel Tower.",
+      "quantity": 4,
       "cost": 120,
       "image": "http://cdn2.bigcommerce.com/server5300/k77di/products/1249/images/5277/statue_france_eiffel_tower_metal_et6__15234.1448737349.1000.1000.jpg?c=2",
       "reviews": {
@@ -24,6 +26,7 @@
     "product3" : {
       "name": "Baby",
       "description": "Beautiful baby, good set of lungs.  Could become a superstar athlete and support you in your latter years.",
+      "quantity": 1,
       "cost": 10,
       "image": "http://images.parents.mdpcdn.com/sites/parents.com/files/styles/width_300/public/images/p_101528432.jpg",
       "reviews": {
@@ -33,6 +36,7 @@
     "product4" : {
       "name": "Banana Giraffe",
       "description": "Awesome Item, do Buy!.",
+      "quantity": 3,
       "cost": 270,
       "image": "http://media-hearth.cursecdn.com/avatars/274/125/635840611419916051.png",
       "reviews": {
@@ -43,6 +47,7 @@
     "product5" : {
       "name": "Tiger",
       "description": "Own your own pair of tigers.",
+      "quantity": 1,
       "cost": 50000,
       "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Haifa_White_Tigers-9129-13.jpg",
       "reviews": {
