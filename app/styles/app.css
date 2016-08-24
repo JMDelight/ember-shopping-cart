@@ -1,0 +1,8 @@
+li {
+  list-style: none;
+}
+
+.thumbnail {
+  width: 100px;
+  float: left;
+}

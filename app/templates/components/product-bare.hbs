@@ -1,0 +1,8 @@
+<div class="container">
+  <img class="thumbnail" src={{product.image}} alt={{product.name}} />
+  {{#link-to 'product' product.id}}<h3>{{product.name}}</h3>{{/link-to}}
+  <p>${{product.cost}}</p>
+  <p>
+    Rating: {{product.averageRating}}
+  </p>
+</div>
