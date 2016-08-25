@@ -1,7 +1,7 @@
 <div class="image-container">
   <img src={{product.image}} alt={{product.name}} class="image-medium" />
 </div>
-{{product.name}} | Quantity remaining: {{product.quantity}}
+{{product.name}} | Quantity remaining: {{availableItems}}
 <p>
   {{product.description}}
 </p>
@@ -13,7 +13,7 @@
     <li>{{review-tile review=review}}</li>
   {{/each}}
 </ul>
-{{#if product.quantity}}
+{{#if availableItems}}
   <button {{action "addToCart" product}}>Add to Cart</button>
 {{else}}
   <h4>Product out of stock</h4>
