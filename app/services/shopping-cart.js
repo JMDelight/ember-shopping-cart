@@ -16,8 +16,6 @@ export default Ember.Service.extend({
     } else {
       counts[unique.indexOf(item)] = counts[unique.indexOf(item)] + 1;
     }
-    this.set('uniqueItems', unique);
-    this.set('uniqueItemsCount', counts);
   },
   cartTotal: Ember.computed('items.length', function() {
     var runningTotal = 0;
