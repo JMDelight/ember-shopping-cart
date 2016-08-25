@@ -1,7 +1,2 @@
-{{#each shoppingCart.items as |item|}}
-<p>
-  {{item.name}} -- {{item.cost}}
-</p>
-{{/each}}
-
-${{shoppingCart.cartTotal}}
+{{cart-item-quantity shoppingCart.uniqueItems shoppingCart.uniqueItemsCount}}
+<h2>Grand Total = ${{shoppingCart.cartTotal}}</h2>
